@@ -73,6 +73,12 @@ pub fn default_output_path(input_path: &str, is_compression: bool) -> String {
 
 
 /// Recursively collect file paths
+/// Collects file paths from the given list of paths.
+///
+/// - `paths`: A list of files or directories to scan.
+/// - `recursive`: If true, walks subdirectories recursively.
+///
+/// Returns a vector of file paths found.
 pub fn collect_files(paths: &[PathBuf], recursive: bool) -> Result<Vec<PathBuf>> {
     let mut files = Vec::new();
     
@@ -95,6 +101,9 @@ pub fn collect_files(paths: &[PathBuf], recursive: bool) -> Result<Vec<PathBuf>>
 }
 
 /// Create parent directories for a path
+/// Ensures the parent directory of a given file path exists.
+///
+/// - `path`: A file path (as `&str`) whose parent directories should be created.
 #[allow(dead_code)]
 pub fn ensure_parent_dir(path: &str) -> Result<()> {
     if let Some(parent) = Path::new(path).parent() {
