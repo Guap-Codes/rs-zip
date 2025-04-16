@@ -5,15 +5,15 @@ A high-performance, open-source command-line utility designed for modern data ma
 
 ## Features
 
-- **LZMA/XZ Compression** (`.xz` files)
+LZMA/XZ Compression** (`.xz` files)
   - Single-file compression with padding optimization
   - Adjustable compression levels (0-9)
-- **Custom Archive Format** (`.rsz` files)
+Custom Archive Format** (`.rsz` files)
   - Multi-file/directory compression
   - Preserves file structure and metadata
   - Recursive directory compression
-- Cross-platform support (Linux, macOS, Windows)
-- Robust error handling and validation
+Cross-platform support (Linux, macOS, Windows)
+Robust error handling and validation
 
 ## Installation
 
