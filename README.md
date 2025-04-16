@@ -90,9 +90,8 @@ RSZ Mode (Multi-file Archive)
 
    * Custom format with metadata header:
    
-   ```bash
     [File Count][File1 Metadata][File1 Data][File2 Metadata][File2 Data]...
-    ```
+   
 
    * File Metadata:
 
@@ -146,7 +145,7 @@ See the bench_analysis.md file on a detailed analysis of the current benchmark r
 
 MIT License - See [LICENSE]|(LICENSE) for details
 
-Contributing
+### Contributing
 
     Fork the repository
 
@@ -158,7 +157,7 @@ Contributing
 
     Create new Pull Request
 
-Acknowledgements:
+### Acknowledgements:
 
     xz2-rs for LZMA compression
 
