@@ -147,31 +147,32 @@ Common Issues:
     * Permission denied: Run with elevated privileges for system files
 
 ### Benchmarks
-Run benchmark tests:
+- Run benchmark tests:
 ```bash
 cargo bench --bench benchmarks
 ```
 
-Benhmark analysis result:
+- Benhmark analysis result:
 See the bench_analysis.md file on a detailed analysis of the current benchmark results.
 
 
-MIT License - See [LICENSE]|(LICENSE) for details
+### MIT License 
+See [LICENSE]|(LICENSE) for details
 
 ### Contributing
 
-    Fork the repository
+   - Fork the repository
 
-    Create feature branch (git checkout -b feature/improvement)
+   - Create feature branch (git checkout -b feature/improvement)
 
-    Commit changes (git commit -am 'Add new feature')
+   - Commit changes (git commit -am 'Add new feature')
 
-    Push to branch (git push origin feature/improvement)
+   - Push to branch (git push origin feature/improvement)
 
-    Create new Pull Request
+   - Create new Pull Request
 
 ### Acknowledgements:
 
-    xz2-rs for LZMA compression
+   - xz2-rs for LZMA compression
 
-    clap-rs for CLI parsing
+   - clap-rs for CLI parsing
