@@ -1,0 +1,28 @@
+[package]
+name = "rs-zip"
+version = "0.1.0"
+edition = "2024"
+authors = ["Guap Codes"]
+license = "MIT"
+description = "A custom compression and decompression CLI tool using LZMA and a custom archive format."
+repository = "https://github.com/guap-codes/rs-zip"
+
+[lib]
+name = "rs_zip"  
+path = "src/lib.rs"  
+
+[dependencies]
+xz2 = "0.1.7"
+clap = { version = "4.5.36", features = ["derive"] }
+byteorder = "1.5"
+walkdir = "2.5"
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+tempfile = "3.3"
+rand = "0.8"
+walkdir = "2.3"
+
+[[bench]]
+name = "benchmarks"
+harness = false

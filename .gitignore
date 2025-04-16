@@ -1,0 +1,38 @@
+# Rust build artifacts
+/target/
+/Cargo.lock
+
+# Benchmarks and Criterion output
+/criterion/
+/*.svg
+/*.html
+
+# Compilation backups and logs
+*.rs.bk
+*.log
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Release binaries and archives
+*.exe
+*.zip
+*.tar.gz
+*.xz
+*.rsz
+*.lzma
+*.bin
+
+# Rust Analyzer files
+rust-project.json
+
+# Misc
+/tests/output/*
