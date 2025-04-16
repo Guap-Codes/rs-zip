@@ -69,15 +69,23 @@ rs-zip -d -f rsz -i archive.rsz -o output_dir/
 ```
 
 * Advanced Options:
-| Flag             | Description                 | Example                    |
-|------------------|-----------------------------|----------------------------|
-| `-i`, `--inputs` | Input files/directories     | `-i file1.txt dir/`        |
-| `-o`, `--output` | Output path                 | `-o backup.rsz`            |
-| `-d`, `--decompress` | Decompress mode         | `-d -i archive.rsz`        |
-| `-l`, `--level`  | Compression level (0-9)     | `-l 9` (max compression)   |
-| `-f`, `--format` | File format (`xz`, `rsz`)   | `-f rsz`                   |
-| `-r`, `--recursive` | Recursive dir compression | `-i dir/ -r`              |
-
+    -i, --inputs        Input files or directories
+                        Example: -i file1.txt dir/
+    
+    -o, --output        Output file path
+                        Example: -o backup.rsz
+    
+    -d, --decompress    Enable decompression mode
+                        Example: -d -i archive.rsz
+    
+    -l, --level         Compression level (0-9)
+                        Example: -l 9     (max compression)
+    
+    -f, --format        Archive format (xz or rsz)
+                        Example: -f rsz
+    
+    -r, --recursive     Enable recursive directory compression
+                        Example: -i dir/ -r
 
 
 ### File Formats
